@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-      <html lang={siteMetadata.language} className={`${rubik} scroll-smooth`}>
+      <html lang={siteMetadata.language} className={`${rubik.className} scroll-smooth`}>
           <body>{children}</body>
       </html>
   );
