@@ -1,7 +1,9 @@
+import Header from "@/components/Header/Header";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        Доверьте уход и красоту вашего питомца лучшим грумерам
-    </main>
+      <div className="flex h-screen flex-col">
+          <Header />
+      </div>
   );
 }
