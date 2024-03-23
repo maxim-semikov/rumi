@@ -8,15 +8,25 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+    },
     extend: {
       colors: {
-        mainGreen: {
-          light: '#3A5700',
-          dark: '#76AC00'
+        rumi: {
+          light: '#76AC00',
+          DEFAULT: '#3A5700'
         }
       },
       fontFamily: {
         sans: ['var(----font-rubik)', 'var(----font-elMessiri)', ...fontFamily.sans],
+      },
+      container: {
+        center: true,
+        padding: '0.5rem'
       },
     },
   },
