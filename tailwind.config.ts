@@ -15,11 +15,15 @@ const config: Config = {
       'xl': '1280px',
     },
     extend: {
+      backgroundImage: {
+        'circles': "url('/assets/images/bg-circles.png')",
+      },
       colors: {
         rumi: {
           light: '#76AC00',
           DEFAULT: '#3A5700'
-        }
+        },
+        bgColor: '#FDFDFD',
       },
       fontFamily: {
         sans: ['var(----font-rubik)', 'var(----font-elMessiri)', ...fontFamily.sans],

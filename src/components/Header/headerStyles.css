@@ -1,5 +1,5 @@
 .header-container{
-    @apply mr-10 flex items-center justify-end py-3 bg-bgColor md:mr-auto md:container md:justify-center;
+    @apply mr-10 flex items-center justify-end py-4 bg-bgColor md:mr-auto md:container md:justify-center;
 }
 
 

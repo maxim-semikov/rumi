@@ -5,9 +5,9 @@ export const siteMetadata = {
     description: 'Студия Rumi - профессиональный уход за вашими питомцами. Мы предлагаем стрижку, купание,' +
         ' обрезку когтей и другие услуги по уходу за животными. Гарантируем комфорт и безопасность вашего питомца!',
     theme: 'light',
-    siteUrl: 'https://rumistudio.vercel.app',
+    siteUrl: 'https://studiorumi.vercel.app/',
     siteRepo: 'https://github.com/maxim-semikov/studiorumi.git',
-    siteLogo: '/static/assets/images/logo.png',
+    siteLogo: '/assets/images/logo.png',
     socialBanner: '/static/assets/images/logo.png',
     email: 'address@yoursite.com',
     language: 'ru',
