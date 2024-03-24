@@ -1,9 +1,18 @@
+.header-container{
+    @apply mr-10 flex items-center justify-end py-3 bg-bgColor md:mr-auto md:container md:justify-center;
+}
+
+
+.nav {
+    @apply hidden w-full md:flex items-center justify-between h-9;
+}
+
 .menu-item {
-    @apply hidden sm:block text-nowrap text-xl text-center transition-all duration-300 w-full;
+    @apply hidden uppercase text-xl lg:text-2xl md:block text-nowrap text-center transition-all duration-300 w-full;
 }
 
 .menu-item:hover {
-    @apply font-bold text-2xl text-rumi-light;
+    @apply font-bold text-2xl lg:text-3xl text-rumi-light;
 }
 
 .menu-item-dot{

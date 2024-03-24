@@ -6,23 +6,25 @@ import './headerStyles.css';
 
 const Header = () => {
     return (
-        <header className="container flex items-center justify-center py-3">
-            <nav className="w-full flex items-center justify-between h-9">
-                {headerNavLinks
-                    .map((link, index) => (
-                        <Fragment key={link.title}>
-                            <Link
-                                href={link.href}
-                                className={'menu-item'}
-                            >
-                                {link.title}
-                            </Link>
-                            {index !== headerNavLinks.length - 1 && <div className={'menu-item-dot'}/>}
-                        </Fragment>
-                    ))}
-            </nav>
-            <MobileNav/>
-        </header>
+        <div className="bg-bgColor">
+            <header className="header-container">
+                <nav className="nav">
+                    {headerNavLinks
+                        .map((link, index) => (
+                            <Fragment key={link.title}>
+                                <Link
+                                    href={link.href}
+                                    className={'menu-item'}
+                                >
+                                    {link.title}
+                                </Link>
+                                {index !== headerNavLinks.length - 1 && <div className={'menu-item-dot'}/>}
+                            </Fragment>
+                        ))}
+                </nav>
+                <MobileNav/>
+            </header>
+        </div>
     )
 }
 
