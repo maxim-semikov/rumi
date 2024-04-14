@@ -26,7 +26,7 @@ export default function Home() {
 
                           <h2 className={`${elMessiri.className} text-6xl mb-10 text-center lg:text-left`}>Бережная
                               забота о лучшем друге</h2>
-                          <p className={'text-3xl text-center lg:text-left'}>Доверьте уход и красоту вашего питомца
+                          <p className={'text-3xl text-center lg:text-left font-light'}>Доверьте уход и красоту вашего питомца
                               лучшим грумерам</p>
                       </div>
 
