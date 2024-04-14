@@ -8,6 +8,7 @@ import {Shape} from "@/components/shape";
 import {Footer} from "@/components/Footer/Footer";
 import {ContactSection} from "@/components/ContactSection/ContactSection";
 import {FeedbackSection} from "@/components/FeedbackSection/FeedbackSection";
+import {TrustSection} from "@/components/TrustSection/TrustSection";
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
                           ' relative'}>
                           <div className={'relative'}>
                               <Image src={'/assets/images/main_banner_photo.png'}
-                                     alt={'Rumi logo'}
+                                     alt={'Груммер дерржит собаку на руках'}
                                      width={556}
                                      height={612}
                               />
@@ -79,6 +80,9 @@ export default function Home() {
                   </Shape>
 
               </section>
+
+
+              <TrustSection />
 
               <FeedbackSection/>
 
