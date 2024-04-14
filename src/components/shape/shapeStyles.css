@@ -1,0 +1,31 @@
+
+.round-out {
+    @apply shrink-0 w-32 relative
+}
+
+.round-out::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    right: 0;
+    bottom: -1px;
+    background-image: radial-gradient(circle at 0 0, transparent 14px, #76AC00 15px);
+}
+
+
+.round-out-second {
+    @apply shrink-0 w-20 relative
+}
+
+.round-out-second::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    left: 0;
+    top: -1px;
+    background-image: radial-gradient(circle at 100% 100%, transparent 14px, #76AC00 15px);
+}

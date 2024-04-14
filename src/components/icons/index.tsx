@@ -13,10 +13,10 @@ const components = {
 type SocialIconProps = {
     kind: keyof typeof components
     href: string | undefined
-    size?: number
+    className: string;
 }
 
-const SocialIcon = ({ kind, href, size = 24 }: SocialIconProps) => {
+const SocialIcon = ({ kind, href, className }: SocialIconProps) => {
     if (!href) {
         return null
     }
@@ -31,12 +31,11 @@ const SocialIcon = ({ kind, href, size = 24 }: SocialIconProps) => {
             href={href}
         >
             <div
-                style={{width: `${size}px`, height: `${size}px`}}
-                className={'flex justify-center items-center rounded-full bg-rumi-light hover:bg-rumi'}
+                className={`flex justify-center items-center rounded-full bg-rumi-light hover:bg-rumi ${className}`}
             >
                 <span className="sr-only">{kind}</span>
                 <SocialSvg
-                    style={{width: `${size-16}px`, height: `${size-16}px`}}
+
                     className={`fill-current text-white`}
                 />
             </div>

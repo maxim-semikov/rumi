@@ -1,0 +1,57 @@
+import Image from "next/image";
+import Link from "@/components/Link";
+import SocialIcon from "@/components/icons";
+import {headerNavLinks} from "@/data/headerNavLinks";
+import {siteMetadata} from "@/data/siteMetadata";
+
+export const Footer = () => {
+    return (
+        <footer className={'py-10'}>
+            <div className={'container flex justify-between flex-wrap gap-10'}>
+                <div className={'flex flex-col justify-center'}>
+                    <Image src={siteMetadata.siteLogo}
+                           alt={'Rumi logo'}
+                           width={193}
+                           height={168}
+                           className={'self-center'}
+                    />
+                    <div className={'flex justify-center gap-2 h-2'}>
+                        <SocialIcon kind={'telegram'} href={siteMetadata.telegram} className={'w-10 h-10'}/>
+                        <SocialIcon kind={'vk'} href={siteMetadata.vk} className={'w-10 h-10'}/>
+                        <SocialIcon kind={'whatsApp'} href={siteMetadata.whatsApp} className={'w-10 h-10'}/>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 className={'text-rumi text-3xl font-medium pb-3'}>Телефон</h3>
+                    {siteMetadata?.contactsNumbers?.map(tel => (
+                        <a href={`tel:${tel}`} key={tel} className={'block font-light text-xl'}>{tel}</a>
+                    ))}
+
+                    <h3 className={'text-rumi text-3xl font-medium pb-1 pt-7'}>Адрес</h3>
+                    <a href={siteMetadata.companyLocation.url} className={'font-light text-xl'}>
+                        {siteMetadata.companyLocation.name}
+                    </a>
+                </div>
+
+
+                <div>
+                    <h3 className={'text-rumi text-3xl font-medium pb-3'}>Навигация</h3>
+                    <nav>
+                        {headerNavLinks
+                            .map((link) => (
+                                <div key={link.title}>
+                                    <Link
+                                        href={link.href}
+                                        className={'font-light text-xl'}
+                                    >
+                                        {link.title}
+                                    </Link>
+                                </div>
+                            ))}
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    )
+}

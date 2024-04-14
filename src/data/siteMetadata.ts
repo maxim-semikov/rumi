@@ -12,6 +12,14 @@ export const siteMetadata = {
     email: 'address@yoursite.com',
     language: 'ru',
     locale: 'ru-RU',
+    telegram: 'https://t.me/studiorumi',
+    vk: 'https://vk.com/studiorumi',
+    whatsApp: 'test',
+    contactsNumbers: ['+79045674051', '+79164681416'],
+    companyLocation: {
+        url: 'https://2gis.ru/moscow/firm/70000001079925656?m=38.062608%2C55.956603%2F17.06',
+        name: 'Московская область, г. Фрязино, ул. Мира, 29'
+    }
 }
 
 
