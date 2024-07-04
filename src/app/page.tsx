@@ -9,6 +9,7 @@ import {Footer} from "@/components/Footer/Footer";
 import {ContactSection} from "@/components/ContactSection/ContactSection";
 import {FeedbackSection} from "@/components/FeedbackSection/FeedbackSection";
 import {TrustSection} from "@/components/TrustSection/TrustSection";
+import {MasterSection} from "@/components/MastersSection/MasterSection";
 
 export default function Home() {
   return (
@@ -80,6 +81,8 @@ export default function Home() {
 
 
               <TrustSection/>
+
+              <MasterSection/>
 
               <FeedbackSection/>
 
