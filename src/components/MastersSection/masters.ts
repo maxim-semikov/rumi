@@ -45,7 +45,7 @@ export const masters = [
     },
     {
         avatarUrl: '/assets/images/man-ava.png',
-        img: '/assets/images/man.jpg',
+        img: '/assets/images/Man.jpg',
         name: 'Имя',
         title: 'Кинолог',
         shortTitle: 'Кинолог',
