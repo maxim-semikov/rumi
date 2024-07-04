@@ -22,12 +22,13 @@ export default function Home() {
                   <div className="flex flex-col mb-48 items-center lg:flex-row lg:justify-center lg:gap-6">
 
                       <div className={'flex flex-col'}>
-                          <Image src={siteMetadata.siteLogo} alt={'Rumi logo'} width={193} height={168}
+                          <Image src={siteMetadata.siteLogo} alt={'Rumi logo'} width={249} height={220}
                                  className={'self-center'}/>
 
-                          <h2 className={`${elMessiri.className} text-6xl mb-10 text-center lg:text-left`}>Бережная
+                          <h2 className={`${elMessiri.className} text-6xl uppercase mb-10 text-center lg:text-left tracking-wider`}>Бережная
                               забота о лучшем друге</h2>
-                          <p className={'text-3xl text-center lg:text-left font-light'}>Доверьте уход и красоту вашего питомца
+                          <p className={'text-3xl text-center lg:text-left font-light tracking-wider'}>Доверьте уход и
+                              красоту вашего питомца
                               лучшим грумерам</p>
                       </div>
 
@@ -39,21 +40,20 @@ export default function Home() {
                                      width={556}
                                      height={612}
                               />
-                              <div className={'absolute md:w-[170px] bottom-0 right-0 flex' +
-                                  ' justify-around gap-1.5'}
+                              <div className={'absolute md:w-[170px] bottom-3 right-0 flex justify-end px-1'}
                               >
                                   <SocialIcon
-                                      className={'w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 '}
+                                      className={'w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 mr-2 md:mr-3'}
                                       kind={'telegram'}
                                       href={siteMetadata.telegram}
                                   />
                                   <SocialIcon
-                                      className={'w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 '}
+                                      className={'w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 mr-2 md:mr-3'}
                                       kind={'vk'}
                                       href={siteMetadata.telegram}
                                   />
                                   <SocialIcon
-                                      className={'w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11 '}
+                                      className={'w-9 h-9 md:w-10 md:h-10 lg:w-11 lg:h-11'}
                                       kind={'whatsApp'}
                                       href={siteMetadata.telegram}
                                   />
@@ -67,22 +67,19 @@ export default function Home() {
 
                   <Shape>
                       <>
-                          <h2 className={`${elMessiri.className} text-4xl text-center uppercase mb-10`}>Наша философия</h2>
-                          <p className={'font-light text-center'}>В основе нашей работы лежит глубокое понимание и
-                              любовь к
-                              животным.
-                              Мы стремимся создать для них их собственный маленький рай, где каждый четвероногий друг
-                              будет
-                              чувствовать себя как дома. Вместе с нами ваш питомец получит не только качественный уход,
-                              но и
-                              море заботы и внимания.</p>
+                          <h2 className={`${elMessiri.className} text-[2.5rem] text-center uppercase leading-relaxed tracking-wider mb-10 pt-4`}>Наша
+                              философия</h2>
+                          <p className={'text-2xl font-light text-center leading-relaxed tracking-wider'}>В основе нашей работы лежит глубокое понимание и любовь к животным.
+                              <br />Мы стремимся создать для них их собственный маленький рай, где каждый четвероногий друг
+                              будет чувствовать себя как дома. Вместе с нами ваш питомец получит не только качественный уход,
+                              но и море заботы и внимания.</p>
                       </>
                   </Shape>
 
               </section>
 
 
-              <TrustSection />
+              <TrustSection/>
 
               <FeedbackSection/>
 
