@@ -8,7 +8,7 @@ export const MasterDetails = ({activeMasterIndex}: {activeMasterIndex: number}) 
 
     return (
         <div className={'flex'}>
-            <Image src={master.img} alt={'sad'} width={332} height={432} className={'mr-10'}/>
+            <Image src={master.img} alt={'sad'} width={332} height={432} className={'mr-10 h-[100%] shrink-0'}/>
             <div>
                 <div className={'mb-5'}>
                     <p className={'text-2xl font-medium'}>{master.name}</p>
@@ -16,7 +16,7 @@ export const MasterDetails = ({activeMasterIndex}: {activeMasterIndex: number}) 
                 </div>
                 <ul className={'list-disc'}>
                     {master.items.map((detail)=> (
-                        <li key={detail} className={'mb-4'}>{detail}</li>
+                        <li key={detail} className={'text-2xl mb-4'}>{detail}</li>
                     ))}
                 </ul>
             </div>

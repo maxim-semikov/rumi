@@ -15,7 +15,7 @@ export const MasterSection = () => {
             <div className={'flex flex-col lg:flex-row gap-10'}>
                 <div className={'flex flex-row flex-wrap justify-center lg:flex-col lg:items-start gap-3'}>
                     {masters.map(({name, shortTitle, avatarUrl}, index) => (
-                        <li key={name} className={'flex items-center gap-4 flex-shrink-0 hover:cursor-pointer'} onClick={() => setActiveMaster(index)}>
+                        <div key={name} className={'flex items-center gap-4 flex-shrink-0 hover:cursor-pointer'} onClick={() => setActiveMaster(index)}>
                             <div className={'flex flex-shrink-0 justify-center items-center w-28 h-28 border' +
                                 ' border-rumi-light rounded-full'}>
                                 <div className={'relative w-24 h-24 border border-rumi-light rounded-full'}>
@@ -26,7 +26,7 @@ export const MasterSection = () => {
                                 <p className={'text-2xl font-medium'}>{name}</p>
                                 <p className={'text-xl'}>{shortTitle}</p>
                             </div>
-                        </li>
+                        </div>
                     ))}
                 </div>
                 <div className={'border border-rumi-light rounded-2xl grow p-10'}>
