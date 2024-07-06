@@ -23,7 +23,7 @@ export default function Home() {
 
                   <div className="flex flex-col mb-48 items-center lg:flex-row lg:justify-center lg:gap-6">
 
-                      <div className={'flex flex-col'}>
+                      <div className={'flex flex-col bg-bgColor'}>
                           <Image src={siteMetadata.siteLogo} alt={'Rumi logo'} width={249} height={220}
                                  className={'self-center'}/>
 

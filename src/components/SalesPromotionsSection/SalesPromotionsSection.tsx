@@ -31,7 +31,7 @@ export const SalesPromotionsSection = () =>  {
     };
 
     return (
-        <section id='salesPromotionsSection' className={'my-20'}>
+        <section id='salesPromotionsSection' className={'my-20 bg-bgColor'}>
             <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Акции</h2>
 
             <Slider {...settings}>

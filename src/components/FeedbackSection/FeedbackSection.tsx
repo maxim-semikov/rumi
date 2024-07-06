@@ -40,7 +40,7 @@ export const FeedbackSection = () =>  {
 
             <Slider {...settings}>
                 {feedbacks.map(feedback => (
-                    <div key={feedback.avatarUrl + feedback.mainText} className={'h-full'}>
+                    <div key={feedback.avatarUrl + feedback.mainText} className={'h-full '}>
                         <div  className={'mr-2 ml-2 h-full'}>
                             <div className={'pt-[30px] pl-[30px] h-full'}>
                                 <div className={'relative rounded-xl bg-rumi-light text-white h-full px-4 pt-5 pb-5'}>

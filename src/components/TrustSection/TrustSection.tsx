@@ -7,7 +7,7 @@ export const TrustSection = () => (
     <section id='tryst' className={'my-40'}>
         <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>почему нам доверяют</h2>
 
-        <div className={'flex gap-4 justify-center items-stretch'}>
+        <div className={'flex gap-4 justify-center items-stretch bg-bgColor'}>
             <Image
                 className={'hidden lg:block h-[100%]'}
                 src={'/assets/images/kissDog.png'}
