@@ -29,7 +29,7 @@ export const MasterSection = () => {
                         </div>
                     ))}
                 </div>
-                <div className={'border border-rumi-light rounded-2xl grow p-10'}>
+                <div className={'border border-rumi-light rounded-3xl grow p-10'}>
                     <MasterDetails activeMasterIndex={activeMaster} />
                 </div>
             </div>
