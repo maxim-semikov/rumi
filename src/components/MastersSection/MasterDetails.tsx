@@ -7,9 +7,9 @@ export const MasterDetails = ({activeMasterIndex}: {activeMasterIndex: number}) 
     const master = masters[activeMasterIndex]
 
     return (
-        <div className={'flex'}>
+        <div className={'flex flex-col md:flex-row'}>
             <Image src={master.img} alt={'sad'} width={332} height={432} className={'mr-10 h-[100%] shrink-0'}/>
-            <div>
+            <div className={'mt-5 md:mt-0'}>
                 <div className={'mb-5'}>
                     <p className={'text-2xl font-medium'}>{master.name}</p>
                     <p className={'text-xl'}>{master.title}</p>
