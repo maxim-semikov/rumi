@@ -10,10 +10,11 @@ import {ContactSection} from "@/components/ContactSection/ContactSection";
 import {FeedbackSection} from "@/components/FeedbackSection/FeedbackSection";
 import {TrustSection} from "@/components/TrustSection/TrustSection";
 import {MasterSection} from "@/components/MastersSection/MasterSection";
+import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
 
 export default function Home() {
   return (
-      <div className="flex h-screen flex-col">
+      <div className="flex h-screen flex-col circles">
           <Header/>
 
           <main className="container">
@@ -81,6 +82,8 @@ export default function Home() {
 
 
               <TrustSection/>
+
+              <SalesPromotionsSection />
 
               <MasterSection/>
 

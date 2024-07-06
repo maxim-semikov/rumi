@@ -18,7 +18,6 @@ export const FeedbackSection = () =>  {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    initialSlide: 2,
                     swipeToSlide: true,
                     arrows: false,
                 }

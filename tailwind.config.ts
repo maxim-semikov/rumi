@@ -16,9 +16,9 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        'circles': "url('/assets/images/bg-circles.png')",
+        'circles': "url('/assets/images/bg-circles.svg')",
         'light-circles': "url('/assets/images/light-circles.svg')",
-        'test': "url('/assets/images/test.svg')",
+        'sales-card': "url('/assets/images/bg-sales-card.svg')",
       },
       colors: {
         rumi: {
