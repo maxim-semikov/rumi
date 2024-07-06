@@ -1,0 +1,18 @@
+
+#feedbacks .slick-track {
+    display: flex;
+}
+
+#feedbacks .slick-slide {
+    align-self: stretch;
+    height: auto;
+}
+
+#feedbacks .slick-slide > div {
+    height: 100%;
+}
+
+#feedbacks .slick-prev:before, .slick-next:before {
+    font-size: 34px;
+    color: #76AC00;
+}
