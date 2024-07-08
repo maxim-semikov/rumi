@@ -9,7 +9,7 @@ export const MasterSection = () => {
     const [activeMaster, setActiveMaster] = useState(0);
 
     return (
-        <section id='tryst' className={'my-20 bg-bgColor'}>
+        <section id='masters' className={'my-20 bg-bgColor'}>
             <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Наши мастера</h2>
 
             <div className={'flex flex-col gap-10'}>
