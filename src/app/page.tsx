@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {elMessiri} from "@/app/fonts";
+import {elMessiri, rubik} from "@/app/fonts";
 import Header from "@/components/Header/Header";
 import {siteMetadata} from "@/data/siteMetadata";
 import SocialIcon from "@/components/icons";
@@ -11,6 +11,7 @@ import {FeedbackSection} from "@/components/FeedbackSection/FeedbackSection";
 import {TrustSection} from "@/components/TrustSection/TrustSection";
 import {MasterSection} from "@/components/MastersSection/MasterSection";
 import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
+import React from "react";
 
 export default function Home() {
   return (
@@ -71,9 +72,12 @@ export default function Home() {
                       <>
                           <h2 className={`${elMessiri.className} text-[2.5rem] text-center uppercase leading-relaxed tracking-wider mb-10 pt-4`}>Наша
                               философия</h2>
-                          <p className={'text-2xl font-light text-center leading-relaxed tracking-wider'}>В основе нашей работы лежит глубокое понимание и любовь к животным.
-                              <br />Мы стремимся создать для них их собственный маленький рай, где каждый четвероногий друг
-                              будет чувствовать себя как дома. Вместе с нами ваш питомец получит не только качественный уход,
+                          <p className={'text-2xl font-light text-center leading-relaxed tracking-wider'}>В основе нашей
+                              работы лежит глубокое понимание и любовь к животным.
+                              <br/>Мы стремимся создать для них их собственный маленький рай, где каждый четвероногий
+                              друг
+                              будет чувствовать себя как дома. Вместе с нами ваш питомец получит не только качественный
+                              уход,
                               но и море заботы и внимания.</p>
                       </>
                   </Shape>
@@ -83,13 +87,35 @@ export default function Home() {
 
               <TrustSection/>
 
-              <SalesPromotionsSection />
+              <SalesPromotionsSection/>
+
+              <Shape>
+                  <>
+                      <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>запишите
+                          своего друга прямо сейчас</p>
+                      <div className={'flex justify-center items-center mt-6'}>
+                          <a href={'test.ru'}
+                             className={`${rubik.className} bg-amber-400 rounded-xl px-5 py-1 text-2xl`}>Записаться</a>
+                      </div>
+                  </>
+              </Shape>
 
               <MasterSection/>
 
               <FeedbackSection/>
 
               <ContactSection/>
+
+              <Shape>
+                  <>
+                      <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>Есть вопросы - напишите нам</p>
+                      <p className={`${elMessiri.className} text-2xl font-light text-center leading-relaxed tracking-wider`}>Наша команда свяжется с вами и проконсультирует</p>
+                      <div className={'flex justify-center items-center mt-6'}>
+                          <a href={'test.ru'}
+                             className={`${rubik.className} bg-amber-200 text-rumi rounded-xl px-5 py-1 text-xl`}>Отправить</a>
+                      </div>
+                  </>
+              </Shape>
 
           </main>
 
