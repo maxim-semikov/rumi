@@ -1,0 +1,23 @@
+.details-container {
+    border: 1px solid #76AC00;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom: none;
+    padding: 40px 40px 0;
+}
+
+.round-out-line {
+    position: relative;
+}
+
+.round-out-line::before {
+    content: '';
+    position: absolute;
+    border-left: 1px solid #76AC00;
+    border-top: 1px solid #76AC00;
+    border-top-left-radius: 1.5rem;
+    left: -1px;
+    bottom: 5px;
+    width: 41px;
+    height: 20px;
+}

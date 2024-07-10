@@ -4,6 +4,7 @@ import {elMessiri} from "@/app/fonts";
 import {masters} from "@/components/MastersSection/masters";
 import Image from "next/image";
 import {MasterDetails} from "@/components/MastersSection/MasterDetails";
+import './MasterSectionStyles.css'
 
 export const MasterSection = () => {
     const [activeMaster, setActiveMaster] = useState(0);
@@ -30,8 +31,25 @@ export const MasterSection = () => {
                         </div>
                     ))}
                 </div>
-                <div className={'border border-rumi-light rounded-3xl grow p-10'}>
-                    <MasterDetails activeMasterIndex={activeMaster} />
+                <div>
+                    <div className={'details-container'}>
+                        <MasterDetails activeMasterIndex={activeMaster} />
+                    </div>
+                    <div className={'flex'}>
+                        <div className={'grow flex flex-col'}>
+                            <div className={'h-[40px] border-l border-rumi-light'}/>
+                            <div className={'h-[24px] border border-rumi-light border-t-0 rounded-bl-3xl' +
+                                ' rounded-br-3xl'}/>
+                        </div>
+
+                        <div className={'flex-shrink-0 w-[200px] h-full flex flex-col'}>
+                            <div className={'h-[24px] flex'}>
+                                <div className={'w-[40px] grow'}/>
+                                <div className={'w-[160px] grow border-rumi-light border-b border-r rounded-br-3xl'}/>
+                            </div>
+                            <div className={'round-out-line h-[24px]'}/>
+                        </div>
+                    </div>
                 </div>
             </div>
 
