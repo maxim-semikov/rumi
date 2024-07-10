@@ -6,7 +6,7 @@ import './headerStyles.css';
 
 const Header = () => {
     return (
-        <div className="bg-bgColor">
+        <div>
             <header className="header-container">
                 <nav className="nav">
                     {headerNavLinks

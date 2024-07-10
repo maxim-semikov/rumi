@@ -16,7 +16,7 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
-        'circles': "url('/assets/images/bg-circles.svg')",
+        'circles': "url('/assets/images/bg-circles.jpg')",
         'light-circles': "url('/assets/images/light-circles.svg')",
         'sales-card': "url('/assets/images/bg-sales-card.svg')",
       },
