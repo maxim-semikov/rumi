@@ -12,14 +12,15 @@ export const FeedbackSection = () =>  {
         slidesToShow: 3,
         slidesToScroll: 3,
         initialSlide: 0,
+        arrows: false,
+        dots: true,
         responsive: [
             {
-                breakpoint: 900,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                     swipeToSlide: true,
-                    arrows: false,
                 }
             },
             {
@@ -28,7 +29,6 @@ export const FeedbackSection = () =>  {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     swipeToSlide: true,
-                    arrows: false
                 }
             }
         ]

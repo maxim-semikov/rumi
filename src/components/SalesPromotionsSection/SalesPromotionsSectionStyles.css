@@ -13,6 +13,8 @@
 }
 
 .sales-card {
+    background-color: #FDFDFD !important;
+    border-radius: 2.5rem;
     @apply mx-auto relative h-[494px] w-[361px]
 }
 

@@ -31,3 +31,16 @@ body {
   font-size: 34px;
   color: #76AC00;
 }
+
+.slick-dots {
+  bottom: -35px;
+}
+
+.slick-dots li button:before {
+  color: #76AC00;
+  font-size: 14px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #3A5700;
+}
