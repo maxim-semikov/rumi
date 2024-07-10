@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import {elMessiri, rubik} from "@/app/fonts";
 import Header from "@/components/Header/Header";
@@ -11,7 +12,6 @@ import {FeedbackSection} from "@/components/FeedbackSection/FeedbackSection";
 import {TrustSection} from "@/components/TrustSection/TrustSection";
 import {MasterSection} from "@/components/MastersSection/MasterSection";
 import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
-import React from "react";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
 
                   <div className="flex flex-col mb-48 items-center lg:flex-row lg:justify-center lg:gap-6">
 
-                      <div className={'flex flex-col bg-bgColor'}>
+                      <div className={'flex flex-col'}>
                           <Image src={siteMetadata.siteLogo} alt={'Rumi logo'} width={249} height={220}
                                  className={'self-center'}/>
 
@@ -63,7 +63,9 @@ export default function Home() {
                               </div>
                           </div>
 
-                          <MakeAnAppointmentBtn/>
+                          <div className={'absolute left-0 bottom-[-8rem] md:bottom-[-3rem]'}>
+                            <MakeAnAppointmentBtn/>
+                          </div>
                       </div>
                   </div>
 
@@ -94,8 +96,8 @@ export default function Home() {
                       <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>запишите
                           своего друга прямо сейчас</p>
                       <div className={'flex justify-center items-center mt-6'}>
-                          <a href={'test.ru'}
-                             className={`${rubik.className} bg-amber-400 rounded-xl px-5 py-1 text-2xl`}>Записаться</a>
+                          <a href={'https://api.whatsapp.com/send?phone=test'}
+                             className={`${rubik.className} bg-amber-200 text-rumi rounded-xl px-5 py-1 text-xl hover:bg-amber-400 hover:text-white`}>Записаться</a>
                       </div>
                   </>
               </Shape>
@@ -106,16 +108,31 @@ export default function Home() {
 
               <ContactSection/>
 
-              <Shape>
-                  <>
-                      <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>Есть вопросы - напишите нам</p>
-                      <p className={`${elMessiri.className} text-2xl font-light text-center leading-relaxed tracking-wider`}>Наша команда свяжется с вами и проконсультирует</p>
-                      <div className={'flex justify-center items-center mt-6'}>
-                          <a href={'test.ru'}
-                             className={`${rubik.className} bg-amber-200 text-rumi rounded-xl px-5 py-1 text-xl`}>Отправить</a>
+              <div className={'my-32 mx-2'}>
+                  <Shape>
+                      <div className={'relative pt-2'}>
+                          <Image src={'/assets/images/cat.png'}
+                                 className={'hidden lg:block absolute bottom-[-140px] left-[-130px] z-10'}
+                                 alt={'Сидит сабака'}
+                                 width={248}
+                                 height={267}
+                          />
+                          <div className={'mr-0 md:mr-[115px] lg:mr-0'}>
+                              <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>Есть вопросы - напишите нам</p>
+                              <p className={`${elMessiri.className} text-2xl font-light text-center leading-relaxed tracking-wider`}>Наша команда свяжется с вами и проконсультирует</p>
+                              <div className={'flex justify-center items-center mt-6'}>
+                                  <a href={'https://api.whatsapp.com/send?phone=test'}
+                                     className={`${rubik.className} bg-amber-200 text-rumi rounded-xl px-5 py-1 text-xl hover:bg-amber-400 hover:text-white`}>Отправить</a>
+                              </div>
+                          </div>
+                          <Image src={'/assets/images/dog.png'}
+                                 className={'hidden md:block absolute bottom-[-150px] right-[-150px] z-10'}
+                                 alt={'Сидит сабака'}
+                                 width={362}
+                                 height={403} />
                       </div>
-                  </>
-              </Shape>
+                  </Shape>
+              </div>
 
           </main>
 

@@ -9,7 +9,7 @@ export const Shape = ({children}:React.PropsWithChildren) => (
             <div className={'grow bg-rumi-light rounded-ss-[26px] rounded-se-[40px]'}/>
         </div>
 
-        <div className={'bg-rumi-light rounded-ss-[40px] rounded-ee-[40px] pb-5 px-10'}>
+        <div className={'bg-rumi-light rounded-ss-[40px] rounded-ee-[40px] py-2 px-5'}>
             {children}
         </div>
 
