@@ -31,7 +31,7 @@ export const masters = [
     },
     {
         avatarUrl: '/assets/images/Lidiya-ava.png',
-        img: '/assets/images/lidiya.jpg',
+        img: '/assets/images/lidiya.png',
         name: 'Варвара',
         title: 'Хэндлер',
         shortTitle: 'Хэндлер',

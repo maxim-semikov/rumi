@@ -7,9 +7,15 @@ export const MasterDetails = ({activeMasterIndex}: {activeMasterIndex: number}) 
     const master = masters[activeMasterIndex]
 
     return (
-        <div className={'min-h-[450px]'}>
-            <Image src={master.img} alt={'sad'} width={332} height={432} className={'float-none mx-auto' +
-                ' md:float-start md:mr-10'}/>
+        <div className={'min-h-[400px]'}>
+            <div className={'relative h-[400px] w-[300px] float-none mx-auto md:float-start md:mr-10 rounded-2xl'}>
+                <Image
+                    src={master.img}
+                    alt={'sad'}
+                    className={'rounded-2xl object-cover'}
+                    fill
+                />
+            </div>
             <div className={'mt-5 md:mt-0'}>
                 <div className={'mb-5'}>
                     <p className={'text-3xl font-medium'}>{master.name}</p>
