@@ -10,7 +10,7 @@ export const MasterSection = () => {
     const [activeMaster, setActiveMaster] = useState(0);
 
     return (
-        <section id='masters' className={'my-20 bg-bgColor'}>
+        <section id='masters' className={'my-20'}>
             <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Наши мастера</h2>
 
             <div className={'flex flex-col gap-10'}>
@@ -19,7 +19,7 @@ export const MasterSection = () => {
                         <div key={name} className={'group flex items-center gap-4 flex-shrink-0 flex-grow' +
                             ' hover:cursor-pointer'} onClick={() => setActiveMaster(index)}>
                             <div className={'flex flex-shrink-0 justify-center items-center w-28 h-28 border' +
-                                ' border-rumi-light rounded-full group-hover:border-4'}>
+                                ' border-rumi-light rounded-full group-hover:border-4 bg-bgColor'}>
                                 <div className={'relative w-24 h-24 border border-rumi-light rounded-full'}>
                                     <Image src={avatarUrl} alt={`${name} - ${shortTitle}`} fill/>
                                 </div>
@@ -32,11 +32,11 @@ export const MasterSection = () => {
                     ))}
                 </div>
                 <div>
-                    <div className={'details-container'}>
+                    <div className={'details-container bg-bgColor'}>
                         <MasterDetails activeMasterIndex={activeMaster} />
                     </div>
                     <div className={'flex'}>
-                        <div className={'grow flex flex-col'}>
+                        <div className={'grow flex flex-col bg-bgColor'}>
                             <div className={'h-[40px] border-l border-rumi-light'}/>
                             <div className={'h-[24px] border border-rumi-light border-t-0 rounded-bl-3xl' +
                                 ' rounded-br-3xl'}/>
