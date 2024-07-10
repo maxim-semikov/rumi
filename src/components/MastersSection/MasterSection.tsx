@@ -43,7 +43,7 @@ export const MasterSection = () => {
                         </div>
 
                         <div className={'flex-shrink-0 w-[200px] h-full flex flex-col'}>
-                            <div className={'h-[24px] flex'}>
+                            <div className={'h-[24px] flex bg-bgColor'}>
                                 <div className={'w-[40px] grow'}/>
                                 <div className={'w-[160px] grow border-rumi-light border-b border-r rounded-br-3xl'}/>
                             </div>

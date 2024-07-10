@@ -3,7 +3,6 @@ import React from "react";
 import Slider, {Settings} from 'react-slick';
 import {elMessiri} from "@/app/fonts";
 import './SalesPromotionsSectionStyles.css'
-import Image from "next/image";
 export const SalesPromotionsSection = () =>  {
     const settings: Settings ={
         infinite: false,
