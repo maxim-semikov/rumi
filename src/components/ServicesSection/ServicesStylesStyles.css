@@ -1,0 +1,46 @@
+.service-button {
+    @apply flex justify-center items-center flex-grow text-2xl text-rumi-light uppercase text-center border-2 border-rumi-light rounded-full bg-bgColor h-14 px-4
+}
+
+.service-button__active, .service-button:hover {
+    @apply text-white bg-rumi-light cursor-pointer
+}
+
+.service-list {
+    @apply list-disc
+}
+
+.service-list > li {
+    @apply pb-3
+}
+
+.service-list > li::marker {
+    @apply text-rumi-light
+}
+
+.service-list-item {
+    @apply text-2xl tracking-wide
+}
+
+.service-list-item-description {
+    @apply text-xl text-gray-400 tracking-wide
+}
+
+.price-list >li {
+    list-style: none;
+    background: url(/assets/images/list-marker.svg) no-repeat left 50%;
+    padding-left: 35px;
+    @apply mb-3
+}
+
+.price-item{
+    @apply flex justify-between flex-wrap
+}
+
+.price-item-description {
+    @apply text-2xl tracking-wide uppercase font-medium flex-shrink-0
+}
+
+.price-item-cost {
+    @apply text-2xl tracking-wide min-w-[180px]
+}

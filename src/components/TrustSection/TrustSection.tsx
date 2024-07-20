@@ -20,7 +20,7 @@ export const TrustSection = () => (
                 {trustPoints.map(({title, description, imgUrl}) => (
                     <li key={title} className={'ml-4 mb-4 flex'}>
                         <div className={'flex items-center justify-center w-[100px] h-[100px] border-2 rounded-full' +
-                            ' border-rumi-light flex-shrink-0 mr-4'}>
+                            ' border-rumi-light flex-shrink-0 mr-4 bg-bgColor'}>
                             <div className={'w-[73px] h-[73px] bg-rumi-light rounded-full flex justify-center' +
                                 ' items-center'}>
                                 <Image src={imgUrl} alt={'сервис'} width={40} height={40}/>

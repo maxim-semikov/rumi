@@ -12,6 +12,7 @@ import {FeedbackSection} from "@/components/FeedbackSection/FeedbackSection";
 import {TrustSection} from "@/components/TrustSection/TrustSection";
 import {MasterSection} from "@/components/MastersSection/MasterSection";
 import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
+import {ServicesSection} from "@/components/ServicesSection/ServicesSection";
 
 export default function Home() {
   return (
@@ -90,6 +91,8 @@ export default function Home() {
               <TrustSection/>
 
               <SalesPromotionsSection/>
+
+              <ServicesSection />
 
               <Shape>
                   <>
