@@ -1,5 +1,5 @@
 import React from "react";
-import {masters} from "@/components/MastersSection/masters";
+import {masters} from "@/data/masters";
 import Image from "next/image";
 
 

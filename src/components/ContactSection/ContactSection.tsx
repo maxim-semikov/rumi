@@ -1,8 +1,9 @@
 import {elMessiri} from "@/app/fonts";
 import {siteMetadata} from "@/data/siteMetadata";
+import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
 
 export const ContactSection = () => (
-    <section id='contact' className={'my-20'}>
+    <section id={NAV_LINKS_SECTIONS_IDS.CONTACTS} className={'my-20'}>
         <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Контакты</h2>
         <div className={'block lg:flex gap-10'}>
             <div className={'flex flex-col justify-around shrink-0 mb-3 gap-3'}>

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import {elMessiri} from "@/app/fonts";
-import {trustPoints} from "@/components/TrustSection/trustPoints";
+import {trustPoints} from "@/data/trustPoints";
 
 export const TrustSection = () => (
     <section id='tryst' className={'my-40'}>

@@ -17,6 +17,7 @@ import siteLogo from '/public/assets/images/logo.png'
 import headerMainPhoto from '/public/assets/images/main_banner_photo.png'
 import catImg from '/public/assets/images/cat.png'
 import dogImg from '/public/assets/images/dog.png'
+import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
 
           <main className="container">
 
-              <section id='about' className={'my-20'}>
+              <section id={NAV_LINKS_SECTIONS_IDS.ABOUT} className={'my-20'}>
 
                   <div className="flex flex-col mb-48 items-center lg:flex-row lg:justify-center lg:gap-6">
 

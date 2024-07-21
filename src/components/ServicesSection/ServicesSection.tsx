@@ -2,9 +2,10 @@ import React from "react";
 import {elMessiri, rubik} from "@/app/fonts";
 import './ServicesStylesStyles.css'
 import Image from "next/image";
+import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
 
 export const ServicesSection = () => (
-    <section id='tryst' className={'my-40'}>
+    <section id={NAV_LINKS_SECTIONS_IDS.SERVICES} className={'my-40'}>
         <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Услуги</h2>
 
         <div className={'flex flex-row justify-center flex-wrap gap-5 pb-6 w-[50%] mx-auto'}>
