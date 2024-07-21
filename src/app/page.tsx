@@ -13,6 +13,10 @@ import {TrustSection} from "@/components/TrustSection/TrustSection";
 import {MasterSection} from "@/components/MastersSection/MasterSection";
 import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
 import {ServicesSection} from "@/components/ServicesSection/ServicesSection";
+import siteLogo from '/public/assets/images/logo.png'
+import headerMainPhoto from '/public/assets/images/main_banner_photo.png'
+import catImg from '/public/assets/images/cat.png'
+import dogImg from '/public/assets/images/dog.png'
 
 export default function Home() {
   return (
@@ -26,7 +30,7 @@ export default function Home() {
                   <div className="flex flex-col mb-48 items-center lg:flex-row lg:justify-center lg:gap-6">
 
                       <div className={'flex flex-col'}>
-                          <Image src={siteMetadata.siteLogo} alt={'Rumi logo'} width={249} height={220}
+                          <Image src={siteLogo} alt={'Rumi logo'}
                                  className={'self-center'}/>
 
                           <h2 className={`${elMessiri.className} text-6xl uppercase mb-10 text-center lg:text-left tracking-wider`}>Бережная
@@ -39,10 +43,8 @@ export default function Home() {
                       <div className={'mt-10 flex-shrink-0 flex justify-end max-w-[612px] md:pl-[100px] lg:mt-0' +
                           ' relative'}>
                           <div className={'relative'}>
-                              <Image src={'/assets/images/main_banner_photo.png'}
+                              <Image src={headerMainPhoto}
                                      alt={'Груммер дерржит собаку на руках'}
-                                     width={556}
-                                     height={612}
                               />
                               <div className={'absolute md:w-[170px] bottom-3 right-0 flex justify-end px-1'}
                               >
@@ -114,11 +116,9 @@ export default function Home() {
               <div className={'my-32 mx-2'}>
                   <Shape>
                       <div className={'relative pt-2'}>
-                          <Image src={'/assets/images/cat.png'}
+                          <Image src={catImg}
                                  className={'hidden lg:block absolute bottom-[-140px] left-[-130px] z-10'}
-                                 alt={'Сидит сабака'}
-                                 width={248}
-                                 height={267}
+                                 alt={'Кошка'}
                           />
                           <div className={'mr-0 md:mr-[115px] lg:mr-0'}>
                               <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>Есть вопросы - напишите нам</p>
@@ -128,11 +128,10 @@ export default function Home() {
                                      className={`${rubik.className} bg-amber-200 text-rumi rounded-xl px-5 py-1 text-xl hover:bg-amber-400 hover:text-white`}>Отправить</a>
                               </div>
                           </div>
-                          <Image src={'/assets/images/dog.png'}
+                          <Image src={dogImg}
                                  className={'hidden md:block absolute bottom-[-150px] right-[-150px] z-10'}
                                  alt={'Сидит сабака'}
-                                 width={362}
-                                 height={403} />
+                          />
                       </div>
                   </Shape>
               </div>
