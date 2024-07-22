@@ -1,1 +1,2 @@
-export * from './makeAnAppointmentBtn';
+export * from './MakeAnAppointmentBtn';
+export * from './Button'

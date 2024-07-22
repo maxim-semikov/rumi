@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import Image from "next/image";
 import {rubik} from "@/app/fonts";
 import {dogServices} from "@/data/dogServices";
-import {Button} from "@/components/buttons/Button";
+import {Button} from "@/components/buttons";
 import {DOGS_SERVICE_NAME} from "@/types/services";
 
 export const DogsServices = () => {
