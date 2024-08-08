@@ -49,7 +49,7 @@ export const SalesPromotionsSection = () =>  {
 
                 <div>
                     <div className={'sales-card sales-card__second'}>
-                        <div className={'price'}>- 5%</div>
+                        <div className={'price'}>- 10%</div>
                         <div className={'sales-description'}>
                             На комплекс <strong>щенкам</strong> и <strong>котятам</strong> до 6 месяцев
                         </div>
@@ -58,7 +58,7 @@ export const SalesPromotionsSection = () =>  {
 
                 <div>
                     <div className={'sales-card sales-card__third'}>
-                        <div className={'price'}>- 15%</div>
+                        <div className={'price'}>- 10%</div>
                         <div className={'sales-description'}>
                             На услуги животным <strong>из приюта</strong>
                         </div>
@@ -68,7 +68,7 @@ export const SalesPromotionsSection = () =>  {
 
                 <div>
                     <div className={'sales-card sales-card__fourth'}>
-                        <div className={'price'}>- 10%</div>
+                        <div className={'price'}>- 5%</div>
                         <div className={'sales-description'}>
                             <strong>Приведи друга</strong>  получи скидку
                         </div>
@@ -79,7 +79,7 @@ export const SalesPromotionsSection = () =>  {
                     <div className={'sales-card sales-card__fifth'}>
                         <div className={'price'}>- 5%</div>
                         <div className={'sales-description'}>
-                            <strong>Напиши отзыв</strong>   получи скидку
+                            <strong>Напиши отзыв</strong> получи скидку
                         </div>
                     </div>
                 </div>
