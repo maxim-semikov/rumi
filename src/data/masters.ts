@@ -1,7 +1,7 @@
 export const masters = [
     {
         avatarUrl: '/assets/images/maria-ava.png',
-        img: '/assets/images/maria.png',
+        img: '/assets/images/maria.webp',
         name: 'Мария',
         title: 'Грумер и основатель студии',
         shortTitle: 'Грумер',
@@ -16,7 +16,7 @@ export const masters = [
     },
     {
         avatarUrl: '/assets/images/liliya-ava.png',
-        img: '/assets/images/liliya.png',
+        img: '/assets/images/liliya.webp',
         name: 'Лилия',
         title: 'Грумер, кинолог',
         shortTitle: 'Грумер, кинолог',
@@ -31,7 +31,7 @@ export const masters = [
     },
     {
         avatarUrl: '/assets/images/Lidiya-ava.png',
-        img: '/assets/images/lidiya.png',
+        img: '/assets/images/lidiya.webp',
         name: 'Варвара',
         title: 'Хэндлер',
         shortTitle: 'Хэндлер',
