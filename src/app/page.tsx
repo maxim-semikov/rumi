@@ -14,7 +14,7 @@ import {MasterSection} from "@/components/MastersSection/MasterSection";
 import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
 import {ServicesSection} from "@/components/ServicesSection/ServicesSection";
 import siteLogo from '/public/assets/images/logo.png'
-import headerMainPhoto from '/public/assets/images/main_banner_photo.png'
+import headerMainPhoto from '/public/assets/images/main_banner_photo.webp'
 import catImg from '/public/assets/images/cat.png'
 import dogImg from '/public/assets/images/dog.png'
 import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
