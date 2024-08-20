@@ -79,13 +79,11 @@ export default function Home() {
                       <>
                           <h2 className={`${elMessiri.className} text-4xl  text-center uppercase tracking-wider mb-4 pt-4`}>Наша
                               философия</h2>
-                          <p className={'text-2xl font-light text-center leading-relaxed tracking-wider'}>В основе нашей
+                          <p className={'text-1xl md:text-2xl font-light text-center leading-relaxed tracking-wider'}>В основе нашей
                               работы лежит глубокое понимание и любовь к животным.
                               <br/>Мы стремимся создать для них их собственный маленький рай, где каждый четвероногий
-                              друг
-                              будет чувствовать себя как дома. Вместе с нами ваш питомец получит не только качественный
-                              уход,
-                              но и море заботы и внимания.</p>
+                              друг будет чувствовать себя как дома. Вместе с нами ваш питомец получит не только качественный
+                              уход, но и море заботы и внимания.</p>
                       </>
                   </Shape>
 
