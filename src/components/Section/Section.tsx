@@ -1,4 +1,3 @@
-import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
 import React from "react";
 import classNames from 'classnames';
 export const Section = ({id, children, className}: {
