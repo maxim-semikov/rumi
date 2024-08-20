@@ -6,6 +6,7 @@ import {elMessiri} from "@/app/fonts";
 import {feedbacks} from "@/data/feedbacks";
 import './feedbackStyles.css'
 import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
+import {Section} from "@/components/Section/Section";
 export const FeedbackSection = () =>  {
     const settings: Settings ={
         infinite: false,
@@ -36,7 +37,7 @@ export const FeedbackSection = () =>  {
     };
 
     return (
-        <section id={NAV_LINKS_SECTIONS_IDS.FEEDBACKS} className={'my-20'}>
+        <Section id={NAV_LINKS_SECTIONS_IDS.FEEDBACKS} className={'pb-10'}>
             <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Отзывы</h2>
 
             <Slider {...settings}>
@@ -58,7 +59,7 @@ export const FeedbackSection = () =>  {
                     </div>
                 ))}
             </Slider>
-        </section>
+        </Section>
     )
 }
 

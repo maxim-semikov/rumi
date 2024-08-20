@@ -18,6 +18,7 @@ import headerMainPhoto from '/public/assets/images/main_banner_photo.webp'
 import catImg from '/public/assets/images/cat.png'
 import dogImg from '/public/assets/images/dog.png'
 import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
+import {Section} from "@/components/Section/Section";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
 
           <main className="container">
 
-              <section id={NAV_LINKS_SECTIONS_IDS.ABOUT} className={'my-20'}>
+              <Section id={NAV_LINKS_SECTIONS_IDS.ABOUT}>
 
                   <div className="flex flex-col mb-48 items-center lg:flex-row lg:justify-center lg:gap-6">
 
@@ -68,7 +69,7 @@ export default function Home() {
                           </div>
 
                           <div className={'absolute left-0 bottom-[-8rem] md:bottom-[-3rem]'}>
-                            <MakeAnAppointmentBtn/>
+                              <MakeAnAppointmentBtn/>
                           </div>
                       </div>
                   </div>
@@ -76,7 +77,7 @@ export default function Home() {
 
                   <Shape>
                       <>
-                          <h2 className={`${elMessiri.className} text-[2.5rem] text-center uppercase leading-relaxed tracking-wider mb-10 pt-4`}>Наша
+                          <h2 className={`${elMessiri.className} text-4xl  text-center uppercase tracking-wider mb-4 pt-4`}>Наша
                               философия</h2>
                           <p className={'text-2xl font-light text-center leading-relaxed tracking-wider'}>В основе нашей
                               работы лежит глубокое понимание и любовь к животным.
@@ -88,14 +89,14 @@ export default function Home() {
                       </>
                   </Shape>
 
-              </section>
+              </Section>
 
 
               <TrustSection/>
 
               <SalesPromotionsSection/>
 
-              <ServicesSection />
+              <ServicesSection/>
 
               <Shape>
                   <>
@@ -122,8 +123,10 @@ export default function Home() {
                                  alt={'Кошка'}
                           />
                           <div className={'mr-0 md:mr-[115px] lg:mr-0'}>
-                              <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>Есть вопросы - напишите нам</p>
-                              <p className={`${elMessiri.className} text-2xl font-light text-center leading-relaxed tracking-wider`}>Наша команда свяжется с вами и проконсультирует</p>
+                              <p className={`${elMessiri.className} text-[40px] font-light text-center uppercase leading-relaxed tracking-wider pt-2`}>Есть
+                                  вопросы - напишите нам</p>
+                              <p className={`${elMessiri.className} text-2xl font-light text-center leading-relaxed tracking-wider`}>Наша
+                                  команда свяжется с вами и проконсультирует</p>
                               <div className={'flex justify-center items-center mt-6'}>
                                   <a href={siteMetadata.whatsApp} target={'_blank'}
                                      className={`${rubik.className} bg-amber-200 text-rumi rounded-xl px-5 py-1 text-xl hover:bg-amber-400 hover:text-white`}>Отправить</a>

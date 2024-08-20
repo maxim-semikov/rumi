@@ -6,11 +6,12 @@ import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
 import {Button} from "@/components/buttons/Button";
 import {DogsServices} from "@/components/ServicesSection/DogsServices";
 import {CatsServices} from "@/components/ServicesSection/CatsServices";
+import {Section} from "@/components/Section/Section";
 
 export const ServicesSection = () => {
     const [activeService, setActiveService] = useState<'DOGS' | "CATS">('DOGS')
     return (
-        <section id={NAV_LINKS_SECTIONS_IDS.SERVICES} className={'my-40'}>
+        <Section id={NAV_LINKS_SECTIONS_IDS.SERVICES}>
             <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Услуги</h2>
 
 
@@ -20,7 +21,7 @@ export const ServicesSection = () => {
             </div>
 
             {activeService === 'DOGS' ? <DogsServices /> : <CatsServices />}
-        </section>
+        </Section>
     )
 }
 

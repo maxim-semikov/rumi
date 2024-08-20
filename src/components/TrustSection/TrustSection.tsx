@@ -2,9 +2,10 @@ import React from "react";
 import Image from "next/image";
 import {elMessiri} from "@/app/fonts";
 import {trustPoints} from "@/data/trustPoints";
+import {Section} from "@/components/Section/Section";
 
 export const TrustSection = () => (
-    <section id='tryst' className={'my-40'}>
+    <Section id='tryst'>
         <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>почему нам доверяют</h2>
 
         <div className={'flex gap-4 justify-center items-stretch'}>
@@ -35,7 +36,7 @@ export const TrustSection = () => (
             </ul>
         </div>
 
-    </section>
+    </Section>
 )
 
 

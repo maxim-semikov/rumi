@@ -6,12 +6,13 @@ import Image from "next/image";
 import {MasterDetails} from "@/components/MastersSection/MasterDetails";
 import './MasterSectionStyles.css'
 import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
+import {Section} from "@/components/Section/Section";
 
 export const MasterSection = () => {
     const [activeMaster, setActiveMaster] = useState(0);
 
     return (
-        <section id={NAV_LINKS_SECTIONS_IDS.MASTERS} className={'my-20'}>
+        <Section id={NAV_LINKS_SECTIONS_IDS.MASTERS}>
             <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Наши мастера</h2>
 
             <div className={'flex flex-col gap-10'}>
@@ -55,7 +56,7 @@ export const MasterSection = () => {
             </div>
 
 
-        </section>
+        </Section>
     )
 }
 

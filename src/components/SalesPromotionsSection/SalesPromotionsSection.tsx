@@ -4,6 +4,7 @@ import Slider, {Settings} from 'react-slick';
 import {elMessiri} from "@/app/fonts";
 import './SalesPromotionsSectionStyles.css'
 import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
+import {Section} from "@/components/Section/Section";
 export const SalesPromotionsSection = () =>  {
     const settings: Settings ={
         infinite: false,
@@ -33,7 +34,7 @@ export const SalesPromotionsSection = () =>  {
     };
 
     return (
-        <section id={NAV_LINKS_SECTIONS_IDS.SALES_PROMOTIONS} className={'my-20'}>
+        <Section id={NAV_LINKS_SECTIONS_IDS.SALES_PROMOTIONS} className={'pb-10'}>
             <h2 className={`${elMessiri.className} text-4xl uppercase text-center mb-10`}>Акции</h2>
 
             <Slider {...settings}>
@@ -94,7 +95,7 @@ export const SalesPromotionsSection = () =>  {
                 </div>
 
             </Slider>
-        </section>
+        </Section>
     )
 }
 
