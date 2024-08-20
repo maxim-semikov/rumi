@@ -1,7 +1,7 @@
 import {CAT_SERVICES_TYPE} from "@/types/services";
 
 export const catServices: CAT_SERVICES_TYPE = {
-    serviceImg: '/assets/images/services-cat-1.png',
+    serviceImg: '/assets/images/services-cat-1.webp',
     serviceList: [
         {name: 'Вычес/стрижка машинкой '},
         {name: 'Стрижка когтей'},

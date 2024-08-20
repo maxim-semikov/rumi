@@ -3,7 +3,7 @@ import Link from "@/components/Link";
 import SocialIcon from "@/components/icons";
 import {headerNavLinks} from "@/data/headerNavLinks";
 import {siteMetadata} from "@/data/siteMetadata";
-import siteLogo from '/public/assets/images/logo.png'
+import siteLogo from '/public/assets/images/rumi-logo.webp'
 export const Footer = () => {
     return (
         <footer className={'py-10'}>
@@ -11,9 +11,9 @@ export const Footer = () => {
                 <div className={'flex flex-col justify-center'}>
                     <Image src={siteLogo}
                            alt={'Rumi logo'}
-                           className={'self-center'}
+                           className={'self-center mb-6'}
                     />
-                    <div className={'flex justify-center gap-2 h-2'}>
+                    <div className={'flex justify-center gap-2 mb-10 md:mb-0'}>
                         <SocialIcon kind={'telegram'} href={siteMetadata.telegram} className={'w-10 h-10'}/>
                         <SocialIcon kind={'vk'} href={siteMetadata.vk} className={'w-10 h-10'}/>
                         <SocialIcon kind={'whatsApp'} href={siteMetadata.whatsApp} className={'w-10 h-10'}/>

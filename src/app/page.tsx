@@ -13,10 +13,10 @@ import {TrustSection} from "@/components/TrustSection/TrustSection";
 import {MasterSection} from "@/components/MastersSection/MasterSection";
 import {SalesPromotionsSection} from "@/components/SalesPromotionsSection/SalesPromotionsSection";
 import {ServicesSection} from "@/components/ServicesSection/ServicesSection";
-import siteLogo from '/public/assets/images/logo.png'
+import siteLogo from '/public/assets/images/rumi-logo.webp'
 import headerMainPhoto from '/public/assets/images/main_banner_photo.webp'
-import catImg from '/public/assets/images/cat.png'
-import dogImg from '/public/assets/images/dog.png'
+import catImg from '/public/assets/images/cat.webp'
+import dogImg from '/public/assets/images/dog.webp'
 import {NAV_LINKS_SECTIONS_IDS} from "@/data/headerNavLinks";
 import {Section} from "@/components/Section/Section";
 
@@ -33,7 +33,7 @@ export default function Home() {
 
                       <div className={'flex flex-col'}>
                           <Image src={siteLogo} alt={'Rumi logo'}
-                                 className={'self-center'}/>
+                                 className={'self-center mb-10'}/>
 
                           <h2 className={`${elMessiri.className} text-6xl uppercase mb-10 text-center lg:text-left tracking-wider`}>Бережная
                               забота о лучшем друге</h2>

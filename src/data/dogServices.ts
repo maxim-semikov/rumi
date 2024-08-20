@@ -2,7 +2,7 @@ import {DOG_SERVICES_TYPE, DOGS_SERVICE_NAME} from "@/types/services";
 export const dogServices: {[key in DOGS_SERVICE_NAME]: DOG_SERVICES_TYPE} = {
 'Стрижка': {
     serviceName: 'Стрижка',
-        serviceImg: '/assets/images/services-dog-1.png',
+        serviceImg: '/assets/images/services-dog-1.webp',
     serviceList: [
     {
         name: 'Вычес подшёрстка',
@@ -44,7 +44,7 @@ export const dogServices: {[key in DOGS_SERVICE_NAME]: DOG_SERVICES_TYPE} = {
 },
 'Триминг': {
     serviceName: 'Триминг',
-        serviceImg: '/assets/images/services-dog-2.png',
+        serviceImg: '/assets/images/services-dog-2.webp',
     serviceList: [
     {
         name: 'Триминг',
@@ -89,7 +89,7 @@ export const dogServices: {[key in DOGS_SERVICE_NAME]: DOG_SERVICES_TYPE} = {
 },
 'Экспресс-линька':{
     serviceName: 'Экспресс-линька',
-        serviceImg: '/assets/images/services-dog-3.png',
+        serviceImg: '/assets/images/services-dog-3.webp',
     serviceList: [
     {
         name: 'Первый этап вычеса',
@@ -137,7 +137,7 @@ export const dogServices: {[key in DOGS_SERVICE_NAME]: DOG_SERVICES_TYPE} = {
 },
 'Дополнительно':{
     serviceName: 'Дополнительно',
-        serviceImg: '/assets/images/services-dog-4.png',
+        serviceImg: '/assets/images/services-dog-4.webp',
     serviceList: [
     {
         name: 'Стрижка когтей + подпил',

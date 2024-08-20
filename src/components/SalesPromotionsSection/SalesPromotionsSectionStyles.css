@@ -20,33 +20,33 @@
 
 .sales-card__one {
     background: url('/assets/images/bg-sales-card.svg') no-repeat fixed,
-                url('/assets/images/dog1.png') no-repeat bottom;
+                url('/assets/images/dog1.webp') no-repeat bottom;
 }
 
 .sales-card__second {
     background: url('/assets/images/bg-sales-card.svg') no-repeat fixed,
-                url('/assets/images/dog2.png') no-repeat bottom;
+                url('/assets/images/dog2.webp') no-repeat bottom;
 }
 
 .sales-card__third {
     background: url('/assets/images/bg-sales-card.svg') no-repeat fixed,
-                url('/assets/images/dog3.png') no-repeat bottom;
+                url('/assets/images/dog3.webp') no-repeat bottom;
 }
 
 
 .sales-card__fourth {
     background: url('/assets/images/bg-sales-card.svg') no-repeat fixed,
-    url('/assets/images/dog4.png') no-repeat bottom;
+    url('/assets/images/dog4.webp') no-repeat bottom;
 }
 
 .sales-card__fifth {
     background: url('/assets/images/bg-sales-card.svg') no-repeat fixed,
-    url('/assets/images/dog5.png') no-repeat bottom;
+    url('/assets/images/dog5.webp') no-repeat bottom;
 }
 
 .sales-card__sixth {
     background: url('/assets/images/bg-sales-card.svg') no-repeat fixed,
-    url('/assets/images/dog6.png') no-repeat bottom;
+    url('/assets/images/dog6.webp') no-repeat bottom;
 }
 
 

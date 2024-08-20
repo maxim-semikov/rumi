@@ -1,22 +1,22 @@
 export const trustPoints = [
     {
-        imgUrl: '/assets/images/shampoo.png',
+        imgUrl: '/assets/images/shampoo.webp',
         title: 'Опыт и профессионализм',
         description: 'Наша команда вкладывает в свою работу не только опыт и профессионализм, но и огромную любовь к' +
             ' животным',
     },
     {
-        imgUrl: '/assets/images/star.png',
+        imgUrl: '/assets/images/star.webp',
         title: 'Индивидуальный подход',
         description: 'К каждому нашему гостю, мы подбираем индивидуальные средства ухода и учитываем его характер и темперамент'
     },
     {
-        imgUrl: '/assets/images/heart.png',
+        imgUrl: '/assets/images/heart.webp',
         title: 'Профессиональная косметика и оборудование',
         description: 'Мы используем только проверенные и качественные продукты для груминга',
     },
     {
-        imgUrl: '/assets/images/heart2.png',
+        imgUrl: '/assets/images/heart2.webp',
         title: 'Забота и любовь',
         description: 'К каждому нашему гостю, мы подбираем индивидуальные средства ухода и учитываем его характер и темперамент'
     }

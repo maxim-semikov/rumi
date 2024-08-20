@@ -11,7 +11,7 @@ export const TrustSection = () => (
         <div className={'flex gap-4 justify-center items-stretch'}>
             <Image
                 className={'hidden lg:block h-[100%]'}
-                src={'/assets/images/kissDog.png'}
+                src={'/assets/images/kissDog.webp'}
                 alt={'Груммер целует собаку'}
                 width={498}
                 height={623}
