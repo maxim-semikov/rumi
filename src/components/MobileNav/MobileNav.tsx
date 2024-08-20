@@ -25,7 +25,7 @@ const MobileNav = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    className="h-8 w-8 text-rumi-light "
+                    className="h-14 w-14 text-rumi-light "
                 >
                     <path
                         fillRule="evenodd"
@@ -40,7 +40,7 @@ const MobileNav = () => {
                 }`}
             >
                 <div className="flex justify-end">
-                    <button className="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu" onClick={onToggleNav}>
+                    <button className="mr-10 mt-6 h-14 w-14" aria-label="Toggle Menu" onClick={onToggleNav}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
