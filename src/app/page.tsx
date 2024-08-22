@@ -33,7 +33,7 @@ export default function Home() {
 
                       <div className={'flex flex-col'}>
                           <Image src={siteLogo} alt={'Rumi logo'}
-                                 className={'self-center mb-10'}/>
+                                 className={'self-center mb-20 md:mb-10'}/>
 
                           <h2 className={`${elMessiri.className} text-6xl uppercase mb-10 text-center lg:text-left tracking-wider`}>Бережная
                               забота о лучшем друге</h2>
